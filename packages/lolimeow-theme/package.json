@@ -1,0 +1,15 @@
+{
+  "name": "vitepress-lolimeow-theme",
+  "version": "0.0.1-alpha.0",
+  "license": "MIT",
+  "keywords": [
+    "vitepress",
+    "theme"
+  ],
+  "author": "https://github.com/trueLoving",
+  "description": "主题包",
+  "main": "index.js",
+  "dependencies": {
+    "headroom.js": "^0.12.0"
+  }
+}

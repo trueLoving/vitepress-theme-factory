@@ -1,0 +1,9 @@
+[submodule "Demo/lolimeow"]
+	path = Demo/lolimeow
+	url = https://github.com/baomihuahua/lolimeow.git
+[submodule "Demo/vite-docs"]
+	path = Demo/vite-docs
+	url = https://github.com/vitejs/docs-cn.git
+[submodule "Demo/vitepress"]
+	path = Demo/vitepress
+	url = https://github.com/vuejs/vitepress.git
