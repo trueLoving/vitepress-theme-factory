@@ -12,5 +12,8 @@ import Footer from "./views/Footer.vue";
 import GoTop from "./components/GoTop/index.vue";
 import SearchBox from "./components/SearchBox/index.vue";
 // import Loading from './components/PageLoading/index.vue'
-import("./components/Sakura/index.js");
+// TODO: 打包环境区分
+// if (import.meta.env.SSR) {
+// import("./components/Sakura/index.js");
+// }
 </script>
