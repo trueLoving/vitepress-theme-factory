@@ -5,20 +5,22 @@
         <!-- TODO  页面响应式 -->
         <!-- TODO  页面懒加载 -->
         <div class="col-lg-10 mx-auto">
-          <Post v-for="item in 10" :key="item" />
-          <Pagination />
+          <Post v-for="item in pageNumber" :key="item" />
+          <Pagination :total="43" @page-change="pageChange" />
         </div>
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-import { onMounted } from "vue";
+import { ref } from "vue";
 import Pagination from "../../components/Pagination/index.vue";
 import Post from "../../components/PostWidget/index.vue";
 
-onMounted(()=>{
-  // const instance = getCurrentInstance()
-  // console.log(instance)
-});
+const pageNumber = ref(1);
+
+function pageChange(pn) {
+  // update Post Data
+  pageNumber.value = pn;
+}
 </script>
