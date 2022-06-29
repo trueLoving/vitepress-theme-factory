@@ -5,7 +5,7 @@
         <!-- TODO  页面响应式 -->
         <!-- TODO  页面懒加载 -->
         <div class="col-lg-10 mx-auto">
-          <Post v-for="item in 1" :key="item" />
+          <Post v-for="item in 10" :key="item" />
           <Pagination />
         </div>
       </div>

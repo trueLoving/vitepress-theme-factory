@@ -1,4 +1,4 @@
-import * as Theme from '../../../packages/lolimeow-theme/index';
+import * as Theme from 'vitepress-lolimeow-theme';
 
 export default {
   ...Theme.default
