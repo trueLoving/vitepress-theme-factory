@@ -14,6 +14,7 @@
     "vitepress",
     "theme"
   ],
+  "//": "冗余依赖，后期会整理",
   "devDependencies": {
     "@babel/types": "^7.18.4",
     "@microsoft/api-extractor": "^7.25.2",

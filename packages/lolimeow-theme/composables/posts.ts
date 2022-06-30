@@ -17,7 +17,7 @@ interface Post {
   originData: any
 }
 
-// get all posts from markdown
-export async function fetchPosts(): Promise<number> {
-  return 123
+// get all posts from markdown under process.cwd
+export async function fetchPosts(): Promise<Post[]> {
+  return []
 }

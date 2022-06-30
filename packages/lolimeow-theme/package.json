@@ -10,6 +10,7 @@
   "description": "vitepress-lolimeow-theme 主题包(wip)",
   "main": "index.js",
   "dependencies": {
-    "headroom.js": "^0.12.0"
+    "headroom.js": "^0.12.0",
+    "fast-glob": "^3.2.7"
   }
 }

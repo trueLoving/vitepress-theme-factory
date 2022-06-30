@@ -4,7 +4,7 @@
 
 ## 两种方式
 
-1. 自定义主题(先采用这方式)
+1. 自定义主题(目前采用这种方式开发主题)
 2. 基于默认主题扩展
 
 ## TODO
@@ -27,53 +27,42 @@
 
 ## Components
 
-- [GoTop](./www/.vitepress/theme/components/GoTop/index.vue)
-- [PageLoading](./www/.vitepress/theme/components/PageLoading/index.vue)
-- [Paging](./www/.vitepress/theme/components/Paging/index.js)
-- [PostWidget](./www/.vitepress/theme/components/PostWidget/index.js)
-- [Canvas Sakura](./www/.vitepress/theme/components/Sakura/index.js)
-- [SearchBox](./www/.vitepress/theme/components/SearchBox/index.js)
+- [GoTop](./components/GoTop/index.vue)
+- [PageLoading](./components/PageLoading/index.vue)
+- [Paging](./components/Paging/index.js)
+- [PostWidget](./components/PostWidget/index.js)
+- [Canvas Sakura](./components/Sakura/index.js)
+- [SearchBox](./components/SearchBox/index.js)
 
 ## Views
 
-- [Banner](./www/.vitepress/theme/views/Banner.vue)
-- [Blog](./www/.vitepress/theme/views/Blog/index.vue)
-- [Footer](./www/.vitepress/theme/views/Footer.vue)
-- [Header](./www/.vitepress/theme/views/Header.vue)
-- [Home](./www/.vitepress/theme/views/Home.vue)
-- [Main](./www/.vitepress/theme/views/Main.vue)
-- [SiteMain](./www/.vitepress/theme/views/SiteMain.vue)
-- NotFound()
+- [Banner](./views/Banner.vue)
+- [Blog](./views/widgets/Blog.vue)
+- [Category](./views/widgets/Category.vue)
+- [Tag](./views/widgets/Tag.vue)
+- [Footer](./views/Footer.vue)
+- [Header](./views/Header.vue)
+- [Home](./views/Home.vue)
+- [Main](./views/Main.vue)
+- [SiteMain](./views/SiteMain.vue)
+- [NotFound](./views/SiteMain.vue)
 
 ## themeConfig
 
-```js
-export default themeConfig = {
-  author: '',// 网站作者
-  banner:[], // banner 图片地址
-  nav:[],     // 头部链接
-  // 链接
-  links:{
-    qq: 'qq link',
-    wechat: 'wechat link',
-    weibo: 'weibo link',
-    github: 'github link',
-    envelope: 'envelope link'
-  }
-}
-```
+[theme.d.ts](./theme.d.ts)
 
 ##　约定(布局)文件
 
-- /root/index.md
-- /root/category.md
-- /root/tag.md
+- /${root}/index.md
+- /${root}/category.md
+- /${root}/tag.md
 
 ##　third dependency 
 
 - [headroom.js](https://www.npmjs.com/package/headroom.js)
+- [fast-glob](https://www.npmjs.com/package/fast-glob)
 
-## Future
+## Future More ...
 
 - CODE STYLE
 - EDITOR STYLE

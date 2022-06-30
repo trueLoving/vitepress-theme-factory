@@ -13,14 +13,13 @@
       </ul>
       <ul class="pagination" v-else>
         <li class="page-item" v-if="currentPage !== 1">
-          <a class="page-link" href="#"
+          <a class="page-link" href="#" @click="pageChange(1)"
             ><i class="fa fa-angle-double-left"></i
           ></a>
         </li>
         <li class="page-item" v-if="currentPage !== 1">
           <a class="page-link">···</a>
         </li>
-        <!-- TODO: 逻辑待完善 -->
         <li
           class="page-item"
           v-for="item in 7"
@@ -41,7 +40,7 @@
           >
         </li>
         <li class="page-item" v-if="currentPage !== maxPage && maxPage > 7">
-          <a class="page-link" href="#"
+          <a class="page-link" href="#" @click="pageChange(maxPage)"
             ><i class="fa fa-angle-double-right"></i
           ></a>
         </li>

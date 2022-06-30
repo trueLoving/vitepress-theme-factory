@@ -1,5 +1,3 @@
-import * as Theme from 'vitepress-lolimeow-theme';
+import LWTheme from 'vitepress-lolimeow-theme/index';
 
-export default {
-  ...Theme.default
-}
+export default LWTheme
