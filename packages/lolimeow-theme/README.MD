@@ -51,13 +51,13 @@
 
 [theme.d.ts](./theme.d.ts)
 
-##　约定(布局)文件
+## 约定(布局)文件
 
 - /${root}/index.md
 - /${root}/category.md
 - /${root}/tag.md
 
-##　third dependency 
+## third dependency 
 
 - [headroom.js](https://www.npmjs.com/package/headroom.js)
 - [fast-glob](https://www.npmjs.com/package/fast-glob)
