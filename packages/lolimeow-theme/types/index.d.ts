@@ -1,15 +1,12 @@
-// define theme config
-
-
 interface NavItem {
   text: string,
   icon: string,
-  children: NavItem[]
+  children?: NavItem[]
   link: string
 }
 
 
-interface LWThemeConfig {
+export interface LWThemeConfig {
   author: string,   // 网站作者
   banner: string[], // banner 图片地址
   nav: NavItem[],   // header 链接

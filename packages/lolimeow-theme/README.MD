@@ -7,6 +7,13 @@
 1. 自定义主题(目前采用这种方式开发主题)
 2. 基于默认主题扩展
 
+## Question
+
+- 如何在主题包里面修改 vite 配置（独立，然后关联项目中注册）
+- 如果在主题包里修改 markdown 配置 （独立，然后关联项目中注册）
+
+> 希望 vitepress 能够提供钩子去修改 vite 配置和 markdown 配置（而不是在vite.config.js和config.js去配置）
+
 ## TODO
 
 - 页面预加载（Loading） --> ??? vite 插件

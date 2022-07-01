@@ -1,6 +1,7 @@
 {
   "name": "vitepress-lolimeow-theme",
   "version": "0.0.1-alpha.0",
+  "type": "module",
   "license": "MIT",
   "keywords": [
     "vitepress",
@@ -8,7 +9,8 @@
   ],
   "author": "https://github.com/trueLoving",
   "description": "vitepress-lolimeow-theme 主题包(wip)",
-  "main": "index.js",
+  "main": "index.ts",
+  "types": "types/index.d.ts",
   "dependencies": {
     "headroom.js": "^0.12.0",
     "fast-glob": "^3.2.7"
