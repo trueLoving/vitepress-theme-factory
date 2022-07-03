@@ -8,6 +8,8 @@
     "theme"
   ],
   "scripts": {
+    "//": "待完善",
+    "postinstall": "npm run build",
     "build": "tsc -p src/ & node scripts/copyClient.js"
   },
   "author": "https://github.com/trueLoving",

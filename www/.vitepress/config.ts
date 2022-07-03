@@ -4,8 +4,6 @@ import { LWThemeConfig } from 'vitepress-lolimeow-theme';
 import banner from './data/banner.js';
 import nav from './data/nav.js';
 
-console.log('xxxxx', process.version)
-
 export default defineConfigWithTheme<LWThemeConfig>({
   title: 'Wordpress lolimeow Theme Fork',
   description: 'Wordpress lolimeow Theme Fork',
