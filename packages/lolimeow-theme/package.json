@@ -7,12 +7,26 @@
     "vitepress",
     "theme"
   ],
+  "scripts": {
+    "build": "tsc -p src/ & node scripts/copyClient.js"
+  },
   "author": "https://github.com/trueLoving",
   "description": "vitepress-lolimeow-theme 主题包(wip)",
   "main": "index.ts",
   "types": "types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./dist/client/*": "./dist/client/*"
+  },
+  "files": [
+    "dist",
+    "types"
+  ],
   "dependencies": {
-    "headroom.js": "^0.12.0",
-    "fast-glob": "^3.2.7"
+    "headroom.js": "^0.12.0"
   }
 }

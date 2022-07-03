@@ -1,3 +1,3 @@
-import LWTheme from 'vitepress-lolimeow-theme/index';
+import LWTheme from 'vitepress-lolimeow-theme';
 
 export default LWTheme
