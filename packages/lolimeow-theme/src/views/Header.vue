@@ -5,11 +5,7 @@
       class="navbar navbar-expand-lg navbar-light navbar-transparent headroom headroom--not-bottom headroom--pinned headroom--top"
     >
       <div class="container">
-        <a
-          class="logo navbar-brand font-weight-bold"
-          href="/"
-          title="boxmoe"
-        >
+        <a class="logo navbar-brand font-weight-bold" href="/" title="boxmoe">
           <img src="../assets/images/logo.png" alt="盒子萌" class="headerlogo"
         /></a>
         <button
@@ -71,16 +67,17 @@
 <script setup lang="ts">
 import { onMounted, computed } from "vue";
 import { useData } from "vitepress";
+// @ts-ignore
 import Headroom from "headroom.js"; // 使用 headroom.js 来控制头部的显示与隐藏
 
 const { theme } = useData();
 const nav = computed(() => theme.value.nav);
 
-const geNavLiClass = (navItem) => {
+const geNavLiClass = (navItem: any) => {
   return navItem.children ? "dropdown dropdown-hover nav-item" : "nav-item";
 };
 
-const geNavAClass = (navItem) => {
+const geNavAClass = (navItem: any) => {
   return navItem.children ? "dropdown-toggle nav-link" : "nav-link";
 };
 

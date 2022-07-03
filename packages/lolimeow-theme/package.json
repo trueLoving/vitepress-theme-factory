@@ -7,12 +7,6 @@
     "vitepress",
     "theme"
   ],
-  "scripts": {
-    "//": "待完善",
-    "postinstall": "npm run build",
-    "build": "tsc -p src/ & node scripts/copyClient.js",
-    "dev": "rimraf dist & tsc -w -p src/ & node scripts/watchAndCopy.js"
-  },
   "author": "https://github.com/trueLoving",
   "description": "vitepress-lolimeow-theme 主题包(wip)",
   "main": "index.ts",
@@ -22,8 +16,13 @@
       "types": "./types/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    },
-    "./dist/client/*": "./dist/client/*"
+    }
+  },
+  "scripts": {
+    "dev": "rimraf dist & tsc -w -p src/ & node scripts/watchAndCopy.js",
+    "//": "待完善",
+    "postinstall": "npm run build",
+    "build": "tsc -p src/ & node scripts/copyClient.js"
   },
   "files": [
     "dist",

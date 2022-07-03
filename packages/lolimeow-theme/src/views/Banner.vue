@@ -51,7 +51,7 @@ const { theme } = useData();
 const banner = computed(() => theme.value.banner);
 
 // 生成范围随机数 Min<=num<=Max
-function RandomNumBoth(Min, Max) {
+function RandomNumBoth(Min: number, Max: number) {
   const Range = Max - Min;
   const Rand = Math.random();
   const num = Min + Math.round(Rand * Range); //四舍五入

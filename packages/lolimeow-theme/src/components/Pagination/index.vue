@@ -66,8 +66,7 @@ const limit = 10; // 一页多少条数
 const { total } = props; // 总数，外部传入
 const maxPage = computed(() => Math.ceil(total / limit)); // 最大页数
 
-function pageChange(pageNumber) {
-  console.log(pageNumber);
+function pageChange(pageNumber: number) {
   currentPage.value = pageNumber;
   emits("pageChange", pageNumber); // 事件向上抛出
 }

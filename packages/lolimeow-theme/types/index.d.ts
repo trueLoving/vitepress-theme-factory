@@ -5,6 +5,8 @@ interface NavItem {
   link: string
 }
 
+
+// 主题相关配置
 export interface LWThemeConfig {
   author: string,   // 网站作者
   banner: string[], // banner 图片地址
@@ -18,6 +20,3 @@ export interface LWThemeConfig {
     envelope: string
   }
 }
-
-// 主题相关配置
-export * from '../dist/client-types/index'

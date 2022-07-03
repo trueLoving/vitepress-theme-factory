@@ -1,4 +1,3 @@
-<!-- .vitepress/theme/Layout.vue -->
 <template>
   <!-- <Loading/> -->
   <Home />
@@ -8,7 +7,6 @@
 </template>
 <script setup lang="ts">
 import { onMounted } from "vue";
-
 import Home from "./views/Home.vue";
 import Footer from "./views/Footer.vue";
 import GoTop from "./components/GoTop/index.vue";

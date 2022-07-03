@@ -1,5 +1,5 @@
 // design post data structure
-interface PostFrontMatter {
+export interface PostFrontMatter {
   /**
    * Post 封面 url 地址
    */

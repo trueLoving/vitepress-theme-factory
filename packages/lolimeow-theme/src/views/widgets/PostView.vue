@@ -14,8 +14,9 @@
                     ><i class="fa fa-folder-o"></i>喵笔记</a
                   >
                 </p>
+                {{frontmatter}}
                 <h3 class="post-title">
-                  Linux 使用 systemctl 启动frp并设置开机自启
+                  {{frontmatter.title}}
                 </h3>
                 <div class="post-meta thw-sept">
                   <div class="post-auther-avatar">
@@ -41,42 +42,7 @@
                 </div>
               </div>
               <div class="post-content">
-                <h2 class="section-title">
-                  <span><i class="fa fa-gear"></i>安装systemctl</span>
-                </h2>
-                <pre
-                  class="prettyprint linenums"
-                ><div class="btn-copy"><span class="single-copy copy" data-clipboard-target="#copy0" title="点击复制本段代码"><i class="fa fa-files-o"></i> 复制代码</span></div><ol class="linenums" id="copy0"><li class="L0"><span class="pln">yum install systemd</span><span class="pun">-</span><span class="pln">sysv </span><span class="pun">&amp;&amp;</span><span class="pln"> reboot</span></li><li class="L1"><span class="pln">apt install systemd</span><span class="pun">-</span><span class="pln">sysv </span><span class="pun">&amp;&amp;</span><span class="pln"> reboot</span></li></ol></pre>
-                <h2 class="section-title">
-                  <span><i class="fa fa-gear"></i>文字</span>
-                </h2>
-                <p>
-                  首先创建服务（ frps.service）：<br />
-                  <code>/lib/systemd/system/frps.service</code><br />
-                  在frps.service里写入以下内容
-                </p>
-                <pre
-                  class="prettyprint linenums"
-                ><div class="btn-copy"><span class="single-copy copy" data-clipboard-target="#copy1" title="点击复制本段代码"><i class="fa fa-files-o"></i> 复制代码</span></div><ol class="linenums" id="copy1"><li class="L0"><span class="pun">[</span><span class="typ">Unit</span><span class="pun">]</span></li><li class="L1"><span class="typ">Description</span><span class="pun">=</span><span class="pln">fraps service</span></li><li class="L2"><span class="typ">After</span><span class="pun">=</span><span class="pln">network</span><span class="pun">.</span><span class="pln">target network</span><span class="pun">-</span><span class="pln">online</span><span class="pun">.</span><span class="pln">target syslog</span><span class="pun">.</span><span class="pln">target</span></li><li class="L3"><span class="typ">Wants</span><span class="pun">=</span><span class="pln">network</span><span class="pun">.</span><span class="pln">target network</span><span class="pun">-</span><span class="pln">online</span><span class="pun">.</span><span class="pln">target</span></li><li class="L4"><span class="pln">&nbsp;</span></li><li class="L5"><span class="pun">[</span><span class="typ">Service</span><span class="pun">]</span></li><li class="L6"><span class="typ">Type</span><span class="pun">=</span><span class="pln">simple</span></li><li class="L7"><span class="pln">&nbsp;</span></li><li class="L8"><span class="com">#启动服务的命令（此处写你的frps的实际安装目录）</span></li><li class="L9"><span class="typ">ExecStart</span><span class="pun">=[/</span><span class="pln">your</span><span class="pun">/</span><span class="pln">path</span><span class="pun">]/</span><span class="pln">frps </span><span class="pun">-</span><span class="pln">c </span><span class="pun">[</span><span class="str">/your/</span><span class="pln">path</span><span class="pun">]/</span><span class="pln">frps</span><span class="pun">.</span><span class="pln">ini</span></li><li class="L0"><span class="pln">&nbsp;</span></li><li class="L1"><span class="pun">[</span><span class="typ">Install</span><span class="pun">]</span></li><li class="L2"><span class="typ">WantedBy</span><span class="pun">=</span><span class="pln">multi</span><span class="pun">-</span><span class="pln">user</span><span class="pun">.</span><span class="pln">target</span></li></ol></pre>
-                <p>
-                  启动<br />
-                  frps sudo systemctl start frps<br />
-                  打开自启动<br />
-                  sudo systemctl enable frps
-                </p>
-                <h2 class="section-title">
-                  <span><i class="fa fa-gear"></i>相关命令</span>
-                </h2>
-                <pre
-                  class="prettyprint linenums"
-                ><div class="btn-copy"><span class="single-copy copy" data-clipboard-target="#copy2" title="点击复制本段代码"><i class="fa fa-files-o"></i> 复制代码</span></div><ol class="linenums" id="copy2"><li class="L0"><span class="com">#启动 frps</span></li><li class="L1"><span class="pln">sudo systemctl start frps</span></li><li class="L2"><span class="com">#重启</span></li><li class="L3"><span class="pln">sudo systemctl restart frps</span></li><li class="L4"><span class="com">#停止 </span></li><li class="L5"><span class="pln">sudo systemctl stop frps</span></li><li class="L6"><span class="com">#查看应用日志</span></li><li class="L7"><span class="pln">sudo systemctl status frps</span></li></ol></pre>
-                <p>
-                  systemd的Unit放在目录<br />
-                  Centos<br />
-                  <code>/usr/lib/systemd/system</code><br />
-                  Ubuntu debian<br />
-                  <code>/etc/systemd/system</code>
-                </p>
+                <Content />
               </div>
 
               <div class="post-footer">
@@ -194,6 +160,11 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useData } from "vitepress";
+
+const data = useData();
+const { frontmatter } = data;
+</script>
 
 <style></style>

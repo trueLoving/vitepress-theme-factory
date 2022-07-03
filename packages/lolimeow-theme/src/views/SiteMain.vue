@@ -15,7 +15,7 @@
 </template>
 <script setup lang="ts">
 import { useData } from "vitepress";
-import { computed, onMounted } from "vue";
+import { computed } from "vue";
 const { frontmatter } = useData();
 const Layout = computed(() => frontmatter.value.layout || "Single");
 </script>

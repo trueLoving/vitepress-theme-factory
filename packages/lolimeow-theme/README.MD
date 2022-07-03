@@ -1,6 +1,6 @@
-使用 vitepress 复刻网站 https://www.boxmoe.com/
+# 主题包 lolimeow-theme
 
-> 主题包
+> 使用 vitepress 复刻网站 https://www.boxmoe.com/
 
 ## 两种方式
 
@@ -9,15 +9,16 @@
 
 ## Question
 
-- 如何在主题包里面修改 vite 配置（独立，然后关联项目中注册）
-- 如果在主题包里修改 markdown 配置 （独立，然后关联项目中注册）
+- 如何在主题包里面修改 vite 配置
+- 如果在主题包里修改 markdown 配置
 
-> 希望 vitepress 能够提供钩子去修改 vite 配置和 markdown 配置（而不是在vite.config.js和config.js去配置）
+> 希望 vitepress 能够提供钩子去修改在主题包里修改 vite 配置和 markdown 配置
+> 目前，对主题包来说，只开放了 enhanceApp 钩子去修改应用配置（src/index.ts）
 
 ## TODO
 
-- 页面预加载（Loading） --> ??? vite 插件
 - markdown 渲染 （代码块，图片）
+- 页面预加载（Loading） --> ??? vite 插件
 - 布局不依赖于markdown
 - 布局划分(UI)
 - 页面懒加载
@@ -30,35 +31,34 @@
 - md 的 frontmatter 设计
 - 组件状态设计
 - assets 文件分解，js逻辑重写
-- 主题包独立包（构建工具:turbo tsup）
 - 可自定义添加 iconfont 图标
 - ......
 
 ## Components
 
-- [GoTop](./components/GoTop/index.vue)
-- [PageLoading](./components/PageLoading/index.vue)
-- [Paging](./components/Paging/index.js)
-- [PostWidget](./components/PostWidget/index.js)
-- [Canvas Sakura](./components/Sakura/index.js)
-- [SearchBox](./components/SearchBox/index.js)
+- [GoTop](./src/components/GoTop/index.vue)
+- [PageLoading](./src/components/PageLoading/index.vue)
+- [Paging](./src/components/Paging/index.js)
+- [PostWidget](./src/components/PostWidget/index.js)
+- [Canvas Sakura](./src/components/Sakura/index.js)
+- [SearchBox](./src/components/SearchBox/index.js)
 
 ## Views
 
-- [Banner](./views/Banner.vue)
-- [Blog](./views/widgets/Blog.vue)
-- [Category](./views/widgets/Category.vue)
-- [Tag](./views/widgets/Tag.vue)
-- [Footer](./views/Footer.vue)
-- [Header](./views/Header.vue)
-- [Home](./views/Home.vue)
-- [Main](./views/Main.vue)
-- [SiteMain](./views/SiteMain.vue)
-- [NotFound](./views/SiteMain.vue)
+- [Banner](./src/views/Banner.vue)
+- [Blog](./src/views/widgets/Blog.vue)
+- [Category](./src/views/widgets/Category.vue)
+- [Tag](./src/views/widgets/Tag.vue)
+- [Footer](./src/views/Footer.vue)
+- [Header](./src/views/Header.vue)
+- [Home](./src/views/Home.vue)
+- [Main](./src/views/Main.vue)
+- [SiteMain](./src/views/SiteMain.vue)
+- [NotFound](./src/views/SiteMain.vue)
 
 ## themeConfig
 
-[theme.d.ts](./theme.d.ts)
+[index.d.ts](./types/index.d.ts)
 
 ## 约定(布局)文件
 
@@ -69,7 +69,6 @@
 ## third dependency 
 
 - [headroom.js](https://www.npmjs.com/package/headroom.js)
-- [fast-glob](https://www.npmjs.com/package/fast-glob)
 
 ## Future More ...
 

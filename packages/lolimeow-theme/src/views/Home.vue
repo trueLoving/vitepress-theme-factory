@@ -7,9 +7,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import Header from "./Header.vue";
 import Banner from "./Banner.vue";
+import Header from "./Header.vue";
 import Main from "./Main.vue";
-import { useData } from "vitepress";
-const { frontmatter } = useData();
 </script>
