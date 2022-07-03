@@ -1,4 +1,26 @@
-export default [
+export const author = 'Star Sky'
+
+export const banner = [
+  '/images/banner/1.jpg',
+  '/images/banner/2.jpg',
+  '/images/banner/3.jpg',
+  '/images/banner/4.jpg',
+  '/images/banner/5.jpg',
+  '/images/banner/6.jpg',
+  '/images/banner/7.jpg',
+  '/images/banner/8.jpg',
+  '/images/banner/9.jpg',
+  '/images/banner/10.jpg',
+  '/images/banner/11.jpg',
+  '/images/banner/12.jpg',
+  '/images/banner/13.jpg',
+  '/images/banner/14.jpg',
+  '/images/banner/15.jpg',
+  '/images/banner/16.jpg',
+  '/images/banner/17.jpg',
+]
+
+export const nav = [
   {
     text: '首页',
     link: '/',
@@ -61,3 +83,11 @@ export default [
   //   ]
   // },
 ]
+
+export const links = {
+  qq: '',
+  wechat: '',
+  weibo: '',
+  github: '',
+  envelope: ''
+}
