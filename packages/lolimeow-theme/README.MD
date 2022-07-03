@@ -17,6 +17,7 @@
 ## TODO
 
 - 页面预加载（Loading） --> ??? vite 插件
+- markdown 渲染 （代码块，图片）
 - 布局不依赖于markdown
 - 布局划分(UI)
 - 页面懒加载
@@ -30,6 +31,7 @@
 - 组件状态设计
 - assets 文件分解，js逻辑重写
 - 主题包独立包（构建工具:turbo tsup）
+- 可自定义添加 iconfont 图标
 - ......
 
 ## Components

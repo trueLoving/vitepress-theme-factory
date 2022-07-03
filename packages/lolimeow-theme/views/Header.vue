@@ -7,7 +7,7 @@
       <div class="container">
         <a
           class="logo navbar-brand font-weight-bold"
-          href="https://www.boxmoe.com"
+          href="/"
           title="boxmoe"
         >
           <img src="../assets/images/logo.png" alt="盒子萌" class="headerlogo"

@@ -1,3 +1,4 @@
+// hacker 逻辑
 import { Theme } from 'vitepress';
 import './assets/css/style.css'; // 全局样式 
 import Layout from './Layout.vue';
@@ -11,7 +12,5 @@ const LWTheme: Theme = {
     // TODO: 
   }
 }
-
-export * as markdown from './markdown/index'
 
 export default LWTheme

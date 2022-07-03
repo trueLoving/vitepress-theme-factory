@@ -14,6 +14,11 @@ export default [
     link: '/tag',
     icon: 'fa-tag'
   },
+  {
+    text: '测试页面',
+    link: '/blog',
+    icon: 'fa-calendar-minus-o'
+  },
   // {
   //   text: '喵分享',
   //   icon: 'fa-share-alt',
