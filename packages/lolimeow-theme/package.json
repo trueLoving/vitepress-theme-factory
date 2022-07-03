@@ -10,7 +10,8 @@
   "scripts": {
     "//": "待完善",
     "postinstall": "npm run build",
-    "build": "tsc -p src/ & node scripts/copyClient.js"
+    "build": "tsc -p src/ & node scripts/copyClient.js",
+    "dev": "rimraf dist & tsc -w -p src/ & node scripts/watchAndCopy.js"
   },
   "author": "https://github.com/trueLoving",
   "description": "vitepress-lolimeow-theme 主题包(wip)",

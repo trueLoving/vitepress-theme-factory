@@ -16,6 +16,7 @@
   ],
   "//": "冗余依赖，后期会整理",
   "devDependencies": {
+    "chokidar": "^3.5.1",
     "@babel/types": "^7.18.4",
     "@microsoft/api-extractor": "^7.25.2",
     "@rollup/plugin-typescript": "^8.3.3",
