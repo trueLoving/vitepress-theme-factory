@@ -88,12 +88,12 @@ const props = defineProps({
 const { post } = props;
 const { frontmatter } = post;
 
-function navigatePage(event) {
+function navigatePage(event: any) {
   event.preventDefault(); // 阻止 a 标签跳转
   console.log("navigatePage");
 }
 
-function navigateCategory(event) {
+function navigateCategory(event: any) {
   event.preventDefault(); // 阻止 a 标签跳转
   console.log("navigateCategory");
 }

@@ -1,5 +1,4 @@
 <template>
-  
   <div id="search">
     <span class="close">X</span>
     <form role="search" id="searchform" @submit="submit()">
@@ -17,7 +16,8 @@
     </form>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
+// @ts-nocheck
 import { onMounted } from "vue";
 
 function submit() {
